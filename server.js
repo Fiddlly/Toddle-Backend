@@ -5,7 +5,7 @@ const classRoutes = require('./controllers/classRoutes');
 const fileRoutes = require('./controllers/filesRoutes');
 const cors = require('cors');
 
-const port = 3007;
+const port = process.env.port||3007;
 const app = express();
 
 app.use(cors())
